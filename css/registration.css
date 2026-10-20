@@ -1,0 +1,254 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f9;
+    color: #263445;
+    margin: 0;
+    padding: 25px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #163b70, #2878b5);
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+#main-title {
+    font-size: 30px;
+    margin: 0 0 18px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 15px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Main form container */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #dce5ef;
+    box-shadow: 0 5px 20px rgba(31, 61, 91, 0.08);
+}
+
+.section h2 {
+    color: #1d4e89;
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+.section > p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Form sections */
+fieldset {
+    border: 1px solid #d9e3ef;
+    border-radius: 9px;
+    padding: 20px;
+    margin: 22px 0;
+    background-color: #fbfdff;
+}
+
+legend {
+    color: #1d4e89;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form labels */
+label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #34465a;
+    margin-bottom: 7px;
+}
+
+/* Text inputs, date, dropdown and textarea */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-top: 3px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: white;
+    color: #263445;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #2878b5;
+    box-shadow: 0 0 0 3px rgba(40, 120, 181, 0.13);
+}
+
+/* Space between form fields */
+fieldset p {
+    margin: 18px 0;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #1d65a6;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 6px 0 0;
+}
+
+fieldset > input[type="radio"] + label,
+fieldset > input[type="checkbox"] + label {
+    margin-right: 14px;
+    font-weight: normal;
+}
+
+/* Terms and conditions */
+form > p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.5;
+}
+
+form > p input[type="checkbox"] {
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* Buttons */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button[type="submit"] {
+    background-color: #168454;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #116b43;
+    transform: translateY(-1px);
+}
+
+button[type="reset"] {
+    background-color: #e2e8f0;
+    color: #334155;
+}
+
+button[type="reset"]:hover {
+    background-color: #cbd5e1;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #bfdbfe;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 22px 10px;
+    }
+
+    #main-title {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    fieldset {
+        padding: 14px;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
+}

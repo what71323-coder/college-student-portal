@@ -1,0 +1,163 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3f9;
+    color: #263445;
+    margin: 0;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #163b70, #2878b5);
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+}
+
+#main-title {
+    font-size: 34px;
+    margin: 0 0 18px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 16px;
+    border-radius: 7px;
+    transition: background-color 0.2s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* Main content */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+/* Content sections */
+.section {
+    background-color: white;
+    margin: 22px 0;
+    padding: 28px;
+    border: 1px solid #dce5ef;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(31, 61, 91, 0.06);
+}
+
+.section h2 {
+    color: #1d4e89;
+    font-size: 25px;
+    margin: 0 0 15px;
+}
+
+.section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* College facilities */
+.facility-card {
+    background-color: #f5f8fc;
+    margin: 16px 0;
+    padding: 20px;
+    border: 1px solid #e0e8f2;
+    border-left: 5px solid #2878b5;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.facility-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 14px rgba(31, 61, 91, 0.1);
+}
+
+.facility-card h3 {
+    color: #1d4e89;
+    font-size: 19px;
+    margin: 0 0 8px;
+}
+
+.facility-card p {
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #bfdbfe;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 24px 12px;
+    }
+
+    #main-title {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 4px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .section h2 {
+        font-size: 22px;
+    }
+
+    .facility-card {
+        padding: 15px;
+    }
+}
